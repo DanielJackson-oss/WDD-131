@@ -6,7 +6,7 @@ body {
 #content {
     max-width: 900px;
     margin: 0 auto;
-    border: 1px solid darkgrey:
+    border: 1px solid darkgrey;
     padding: 50px;
 } 
 p {
@@ -23,7 +23,7 @@ h1, h2, p {
 }
 #topics {
     width: 55%;
-    margin: 0 auto:
+    margin: 0 auto;
     line-height: 1.5em;
 }
 img {
