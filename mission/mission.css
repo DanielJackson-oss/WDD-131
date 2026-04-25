@@ -1,0 +1,99 @@
+
+body {
+    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #222;
+    margin: 40px 20px;
+}
+
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 60px 100px;
+}
+
+
+.card-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.page-title {
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 12px;
+    text-align: center;  
+}
+
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #4a7fa5;
+    margin: 0 0 4px 0;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #aaa;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mission-content {
+    text-align: center;
+}
+
+.mission-intro,
+.mission-lead,
+.mission-list {
+    text-align: center;
+}
+
+.mission-content {
+    margin-top: 36px;
+    line-height: 1.7;
+}
+
+.mission-intro {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.mission-lead {
+    margin-bottom: 12px;
+    text-align: left;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.mission-list {
+    padding-left: 24px;
+    text-align: left;
+    list-style-position: outside;
+}
+
+.mission-list li {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    list-style-position: inside;
+    font-size: 0.9em;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 130px;
+}
