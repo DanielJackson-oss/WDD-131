@@ -1,0 +1,98 @@
+* {                   /*I also looked up * symbol and hope its okay to use*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d3d3d3;
+}
+header {
+  background-color: #4a90d9;
+  color: white;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Georgia, serif; 
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+}
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none; /* I asked AI for help to get this underlined */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    display: none;
+}
+.menu-link {
+    display: inline-block;
+    font-size: 1.8rem;
+}
+nav a:hover {
+    color: #ddd;
+}
+main {
+    padding: 1rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery img {
+        height: 250px;
+    }
+}
+@media (min-width: 900px) {
+    nav a {
+        display: inline-block;
+    }
+    .menu-link {
+        display: none;
+    }
+    .nav-link {
+        display: inline-block;
+        text-decoration: underline;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery img {
+        height: 300px;
+    }
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+/* I used AI to helped debug and organize @media breakpoints. */
