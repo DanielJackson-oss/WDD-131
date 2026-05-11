@@ -27,8 +27,17 @@ section {
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid grey;
+
 }
+.hide {
+    display: none;
+
+}
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
@@ -43,7 +52,19 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 1.5s;
 }
+
+
+.change .bar1 {
+  transform: translate(0, 9.5px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -9.5px) rotate(45deg);
+}
+          
 footer {
     text-align: center;
 }
@@ -58,10 +79,14 @@ footer {
             display: none;
     }
     nav a {
-        display: block;  
+        display: inline;
+        border: none; 
     }
     nav {
         text-align: right;
+    }
+    .hide{
+        display: block;
     }
 }
  
@@ -71,10 +96,5 @@ footer {
     }
 
 }
-    
-    
-    
-    
-    
     
     /* Media query has to be at the end of the CSS file. */
