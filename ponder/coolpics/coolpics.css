@@ -109,7 +109,7 @@ dialog::backdrop {
 }
 dialog img {
     display: block;
-    min-width: 1000px;
+    min-width: 100px;
     max-width: 100%;
     max-height: 90vh;
     border: 3px solid #ccc;
@@ -117,7 +117,7 @@ dialog img {
 .close-viewer {
     position: fixed;
     top: 200px;
-    right: 500px;
+    right: 200px;
     background: white;
     color: #333;
     border: 2px solid #ccc;
