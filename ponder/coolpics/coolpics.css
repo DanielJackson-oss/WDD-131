@@ -24,6 +24,7 @@ h2 {
     font-size: 2rem;
     font-family: Georgia, serif;
 }
+
 .menu-btn {
     display: block;
     margin: 0 auto 0.5rem;
@@ -101,6 +102,7 @@ dialog {
     background: transparent;
     max-width: 90vw;
     max-height: 90vh;
+    margin:auto;
 }
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.80);
@@ -130,11 +132,14 @@ dialog img {
     background: #eee;
 }
 
+/* Tablet */
 @media (min-width: 600px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Desktop */
 @media (min-width: 900px) {
     .menu-btn {
         display: none;
