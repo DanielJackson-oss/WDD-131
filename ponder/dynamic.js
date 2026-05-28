@@ -30,3 +30,27 @@ name.innerHTML = html;
 container.appendChild(name);
 
 })
+
+// literal
+const pets = ['cat', 'dog', 'bird'];
+
+//constructor
+const animals = new Array('pig', 'goat', 'sheep');
+
+pets.push('lizard');
+
+console.log(pets);
+
+console.log(pets[0]);
+
+pets[3] = 'bunny';  
+
+console.log(pets);
+
+pets.pop();
+
+console.log(pets);
+
+pets.shift();
+
+console.log(pets);
