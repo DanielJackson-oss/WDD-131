@@ -93,6 +93,7 @@ header h1 {
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
     color: #333;
+    max-width: 280px;  
 }
 
 footer {
@@ -117,12 +118,10 @@ footer {
         grid-column: 1 / 2;
     }
 
-    .book-content {
-        grid-column: 2 / 3;
-        border-left: 3px solid #f0c040;
-        padding-left: 1.5rem;
-        padding-top: 0.5rem;
-    }
+   .book-content img {
+    max-width: 120px;
+    margin: 0.5rem 0 0.5rem 2rem; 
+}
     .book-content img {
         max-width: 120px;
         margin: 0.5rem 0 0.5rem 6rem;
