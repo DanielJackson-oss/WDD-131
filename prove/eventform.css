@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ccd9e8;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+form {
+  background: white;
+  border: 2px solid #b0c4d8;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form h2 {
+  margin: 0 0 8px 0;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input,
+select {
+  padding: 0.4rem;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.6rem;
+  font: inherit;
+  background: #b0c4d8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #9ab4cc;
+}
+
+#extraField[hidden] {
+  display: none;
+}
+
+#output {
+  margin-top: 1rem;
+  background: white;
+  border: 2px solid #b0c4d8;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#output:empty {
+  display: none;
+}
