@@ -1,0 +1,100 @@
+<svg width="680" height="340" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+  <title>CSE Logo</title>
+  <desc>A modern logo for CSE with geometric circuit-board aesthetic</desc>
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .hex-fill { fill: #042C53; }
+        .hex-stroke { stroke: #85B7EB; }
+        .accent { fill: #378ADD; }
+        .node-fill { fill: #185FA5; }
+        .trace { stroke: #378ADD; opacity: 0.45; }
+        .outer-ring { stroke: #185FA5; }
+        .sub-text { fill: #85B7EB; }
+        .main-text { fill: #E6F1FB; }
+      }
+      @media (prefers-color-scheme: light) {
+        .hex-fill { fill: #E6F1FB; }
+        .hex-stroke { stroke: #185FA5; }
+        .accent { fill: #378ADD; }
+        .node-fill { fill: #378ADD; }
+        .trace { stroke: #185FA5; opacity: 0.3; }
+        .outer-ring { stroke: #378ADD; }
+        .sub-text { fill: #185FA5; }
+        .main-text { fill: #042C53; }
+      }
+      .hex-fill { fill: #E6F1FB; }
+      .hex-stroke { stroke: #185FA5; }
+      .accent { fill: #378ADD; }
+      .node-fill { fill: #378ADD; }
+      .trace { stroke: #185FA5; opacity: 0.3; }
+      .outer-ring { stroke: #378ADD; }
+      .sub-text { fill: #185FA5; }
+      .main-text { fill: #042C53; }
+    </style>
+  </defs>
+
+  <!-- Circuit traces background -->
+  <g class="trace" fill="none" stroke-width="1.5">
+    <polyline points="200,120 180,120 180,90 160,90"/>
+    <polyline points="200,180 180,180 180,210 160,210"/>
+    <polyline points="480,120 500,120 500,90 520,90"/>
+    <polyline points="480,180 500,180 500,210 520,210"/>
+    <polyline points="340,80 340,60 310,60 310,40"/>
+    <polyline points="340,260 340,280 370,280 370,300"/>
+    <polyline points="260,90 260,60 290,60"/>
+    <polyline points="420,90 420,60 390,60"/>
+    <polyline points="260,210 260,240 230,240"/>
+    <polyline points="420,210 420,240 450,240"/>
+    <line x1="160" y1="90" x2="140" y2="90" stroke-width="1.5"/>
+    <line x1="160" y1="210" x2="140" y2="210" stroke-width="1.5"/>
+    <line x1="520" y1="90" x2="540" y2="90" stroke-width="1.5"/>
+    <line x1="520" y1="210" x2="540" y2="210" stroke-width="1.5"/>
+  </g>
+
+  <!-- Trace endpoint nodes -->
+  <circle cx="140" cy="90" r="4" class="accent"/>
+  <circle cx="140" cy="210" r="4" class="accent"/>
+  <circle cx="540" cy="90" r="4" class="accent"/>
+  <circle cx="540" cy="210" r="4" class="accent"/>
+  <circle cx="310" cy="40" r="4" class="accent"/>
+  <circle cx="370" cy="300" r="4" class="accent"/>
+  <circle cx="230" cy="240" r="4" class="accent"/>
+  <circle cx="450" cy="240" r="4" class="accent"/>
+  <circle cx="290" cy="60" r="4" class="accent"/>
+  <circle cx="390" cy="60" r="4" class="accent"/>
+
+  <!-- Outer hexagon -->
+  <polygon points="340,60 430,110 430,210 340,260 250,210 250,110"
+    class="hex-fill hex-stroke" stroke-width="1.5"/>
+
+  <!-- Inner ring -->
+  <polygon points="340,80 416,124 416,196 340,240 264,196 264,124"
+    fill="none" class="outer-ring" stroke-width="0.75" opacity="0.5"/>
+
+  <!-- Hexagon corner dots -->
+  <circle cx="340" cy="60" r="5" class="node-fill"/>
+  <circle cx="430" cy="110" r="5" class="node-fill"/>
+  <circle cx="430" cy="210" r="5" class="node-fill"/>
+  <circle cx="340" cy="260" r="5" class="node-fill"/>
+  <circle cx="250" cy="210" r="5" class="node-fill"/>
+  <circle cx="250" cy="110" r="5" class="node-fill"/>
+
+  <!-- CSE letters -->
+  <text x="340" y="183"
+    font-family="system-ui, sans-serif"
+    font-size="88"
+    font-weight="500"
+    text-anchor="middle"
+    letter-spacing="-2"
+    class="main-text">CSE</text>
+
+  <!-- Subtitle -->
+  <text x="340" y="298"
+    font-family="system-ui, sans-serif"
+    font-size="13"
+    font-weight="400"
+    text-anchor="middle"
+    letter-spacing="4"
+    class="sub-text">COMPUTER SCIENCE &amp; ENGINEERING</text>
+</svg>
