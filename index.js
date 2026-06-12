@@ -1,14 +1,3 @@
-// function openFolder(name) {
-//     document.querySelectorAll('.contents').forEach(el => el.classList.add('hidden'));
-//     document.getElementById(name).classList.remove('hidden');
-// }
-
-// function goBack() {
-//     document.querySelectorAll('.contents').forEach(el => el.classList.add('hidden'));
-//     document.getElementById('folder-view').classList.remove('hidden');
-// }
-
-
 const funFacts = [
     "🐙 Octopuses have three hearts and blue blood!",
     "🍯 Honey never spoils — 3,000-year-old honey found in Egyptian tombs was still edible!",
