@@ -1,81 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox Exercise</title>
-    <link href="flexbox.css" rel="stylesheet" />
+    <title>RecipeBook | Find Your Next Favorite Dish</title>
+    <meta name="description" content="RecipeBook is a simple place to discover and save delicious recipes for every meal and occasion." />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RecipeBook | Find Your Next Favorite Dish" />
+    <meta property="og:description" content="RecipeBook is a simple place to discover and save delicious recipes for every meal and occasion." />
+    <meta property="og:url" content="https://githubusername.github.io/wdd131/recipes/" />
+    <meta property="og:image" content="images/social-preview-image.png" />
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RecipeBook | Find Your Next Favorite Dish" />
+    <meta name="twitter:description" content="RecipeBook is a simple place to discover and save delicious recipes for every meal and occasion." />
+    <meta name="twitter:image" content="images/social-preview-image.png" />
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="recipes.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Flexbox Exercise</h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-        </ul>
-      </nav>
+      <div class="logo-title">
+        <img src="images/recipe-book.png" alt="RecipeBook logo" />
+        <h1>RecipeBook</h1>
+      </div>
+      <form class="search" action="#" method="get">
+        <input type="search" name="search" placeholder="Find a recipe" />
+        <button type="submit">
+          <img src="images/search.svg" alt="search icon" />
+        </button>
+      </form>
     </header>
+
     <main>
-      <section class="media-card-container">
-        <h2>A Media Card Example</h2>
-        <section class="media-card">
-            <div class="media-card-image">
-                <img src="https://wddbyui.github.io/wdd131/images/desk-sm.jpg" alt="work desk with monitor"> 
-            </div>
-            <div class="media-card-content">
-                <h3>A title describing the paragraph</h3>
-                <p>A paragraph with  more information about the topic mentioned in the heading.</p>
-            </div>
-        </section>
-        <hr>
-      </section>
-      <section class="gallery-container">
-        <h2>A Gallery Example</h2>
-        <div class="gallery">
-            <section class="media-card">
-                <div class="media-card-image">
-                    <img src="https://wddbyui.github.io/wdd131/images/desk-sm.jpg" alt="work desk with monitor"> 
-                </div>
-                <div class="media-card-content">
-                    <h3>A title describing the paragraph</h3>
-                    <p>A paragraph with  more information about the topic mentioned in the heading.</p>
-                </div>
-            </section>
-            <section class="media-card">
-                <div class="media-card-image">
-                    <img src="https://wddbyui.github.io/wdd131/images/desk-sm.jpg" alt="work desk with monitor"> 
-                </div>
-                <div class="media-card-content">
-                    <h3>A title describing the paragraph</h3>
-                    <p>A paragraph with  more information about the topic mentioned in the heading.</p>
-                </div>
-            </section>
-            <section class="media-card">
-                <div class="media-card-image">
-                    <img src="https://wddbyui.github.io/wdd131/images/desk-sm.jpg" alt="work desk with monitor"> 
-                </div>
-                <div class="media-card-content">
-                    <h3>A title describing the paragraph</h3>
-                    <p>A paragraph with  more information about the topic mentioned in the heading.</p>
-                </div>
-            </section>
-            <section class="media-card">
-            <div class="media-card-image">
-                <img src="https://wddbyui.github.io/wdd131/images/desk-sm.jpg" alt="work desk with monitor"> 
-            </div>
-            <div class="media-card-content">
-                <h3>A title describing the paragraph</h3>
-                <p>A paragraph with  more information about the topic mentioned in the heading.</p>
-            </div>
-        </section>
+      <section class="recipe-card">
+        <div class="recipe-card-image">
+          <img src="images/apple-crisp.jpg" alt="bowl of apple crisp with vanilla ice cream" />
+        </div>
+        <div class="recipe-card-content">
+          <span class="tag">dessert</span>
+          <h2>Apple Crisp</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
         </div>
       </section>
     </main>
+
+    <footer>
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+      <div class="social">
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon" /></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon" /></a>
+      </div>
+    </footer>
   </body>
 </html>
-                
