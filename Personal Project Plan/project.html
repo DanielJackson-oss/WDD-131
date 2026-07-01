@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Jar Site Plan</title>
+  <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+
+  <h1>Budget Jar Site Plan</h1>
+  <h2>Daniel Jackson</h2>
+  <h2>WDD 131-01</h2>
+
+  <hr>
+
+  <h2>Overview</h2>
+
+  <h3>Purpose</h3>
+  <p>
+    BudgetJar is a simple, browser-based budget tracker that lets a user set a
+    spending limit, log individual expenses against it, and immediately see
+    how much money they have left. The purpose is to replace mental math or
+    scattered notes with one clear, visual snapshot of spending.
+  </p>
+
+  <h3>Audience</h3>
+  <p>
+    The intended audience is students and young adults managing a limited
+    weekly or monthly amount &mdash; like spending money, groceries, or
+    entertainment funds &mdash; who want something fast and login-free to
+    check from their phone.
+  </p>
+
+  <h3>Dynamic elements</h3>
+  <p>
+    JavaScript drives all of the page's interactivity. Expenses are stored as
+    objects (description, amount, category) inside an array. Submitting the
+    "add expense" form triggers an event listener that creates a new expense
+    object, pushes it into the array, and re-renders the list. The running
+    total is calculated with the array's <code>reduce()</code> method, and the
+    remaining balance updates and changes color (conditional branching) as the
+    user nears or exceeds their budget. A category filter uses
+    <code>filter()</code> to show only matching expenses, and a delete button
+    on each entry removes it from the array and the DOM using
+    <code>forEach()</code> to re-render. A visual progress bar ("budget jar")
+    fills based on percentage of budget spent, giving an at-a-glance sense of
+    where the user stands.
+  </p>
+
+  <hr>
+
+  <h2>Branding</h2>
+
+  <h3>Website Logo</h3>
+  <img src="images/istockphoto-2159450201-612x612.jpg" alt="BudgetJar logo: a simple jar icon filling with coins">
+  <hr>
+
+  <h2>Style Guide</h2>
+
+  <h3>Color Palette</h3>
+  <p>Palette URL: <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c">https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a></p>
+
+  <table class="colors">
+    <tr>
+      <th>Primary</th>
+      <th>Secondary</th>
+      <th>Accent 1</th>
+      <th>Accent 2</th>
+    </tr>
+    <tr>
+      <td class="primary">#1E3A5F</td>      
+      <td class="secondary">#2E8B57</td>    
+      <td class="accent1">#F4B400</td>      
+      <td class="accent2">#F8F9FA</td>      
+    </tr>
+  </table>
+
+  <h3>Typography</h3>
+  <p><strong>Heading Font</strong>: IM Fell French Canon SC</p>
+  <p><strong>Paragraph Font</strong>: Lato</p>
+
+  <h4>Normal paragraph example</h4>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </p>
+
+  <h4>Colored paragraph example</h4>
+  <p class="colored">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <h3>Navigation</h3>
+  <p>
+    BudgetJar is a single-page application, so there is only one page in the
+    navigation.
+  </p>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <hr>
+
+  <h2>Content</h2>
+
+  <h3>Home page</h3>
+  <p>
+    The home page contains everything BudgetJar does, since it's a one-page
+    app:
+  </p>
+  <ul>
+    <li>Header with app name and tagline</li>
+    <li>Budget-setup control to enter the total budget amount</li>
+    <li>Visual "jar" progress bar showing spent vs. remaining, with an image of a jar/piggy bank</li>
+    <li>Add-expense form (description, amount, category)</li>
+    <li>Dynamically rendered expense list, each entry removable</li>
+    <li>Category filter buttons</li>
+    <li>Summary stats: total spent, remaining balance, percent of budget used</li>
+    <li>Footer with name and last-updated date</li>
+  </ul>
+
+  <h2>Wireframes</h2>
+  <p>Create two wireframes for your site. One for each page and list them here.</p>
+
+  <h3>Home</h3>
+  <p>
+    Mobile-first layout: header at top, budget input and jar visual stacked
+    below it, then the add-expense form, then the filter buttons, then the
+    scrollable expense list. On wider screens, the jar visual and the
+    add-expense form sit side by side above the expense list.
+  </p>
+  <img src="images/home-wireframe.jpg" alt="home page wireframe">
+  <p><em>[Replace the src above with your actual wireframe image, mobile and desktop versions]</em></p>
+
+</body>
+</html>
