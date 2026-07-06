@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BudgetJar | Track Your Spending</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="main.js" defer></script>
+  <meta name="description" content="BudgetJar is a simple, login-free browser app for tracking a budget and logging expenses in real time." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/istockphoto-2159450201-612x612.jpg" alt="BudgetJar logo: a jar filling with coins" class="logo-img" />
+      <div class="logo-text">
+        <h1>BudgetJar</h1>
+        <p class="tagline">Watch your spending fill up, not spiral out.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="budget-panel" aria-label="Budget setup and progress">
+
+      <div class="budget-setup">
+        <h2>Set Your Budget</h2>
+        <label for="budget-input">Total budget amount ($)</label>
+        <input
+          type="number"
+          id="budget-input"
+          name="budget-input"
+          min="0"
+          step="0.01"
+          placeholder="e.g. 200"
+        />
+        <p class="error-message" id="budget-error" role="alert" hidden>
+          Please enter an amount greater than $0.
+        </p>
+      </div>
+
+      <div class="jar-visual" aria-label="Budget progress">
+        <img src="images/istockphoto-2159450201-612x612.jpg" alt="Jar illustration representing budget usage" class="jar-img" />
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progress-bar" style="width: 0%;"></div>
+        </div>
+        <p class="status-message" id="status-message">No budget set yet</p>
+      </div>
+
+    </section>
+
+    <section class="summary-stats" aria-label="Spending summary">
+      <div class="stat">
+        <span class="stat-label">Total Spent</span>
+        <span class="stat-value" id="total-spent-display">$0.00</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Remaining</span>
+        <span class="stat-value" id="remaining-display">$0.00</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">% Used</span>
+        <span class="stat-value" id="percent-used-display">0%</span>
+      </div>
+    </section>
+
+    <section class="add-expense" aria-label="Add an expense">
+      <h2>Add an Expense</h2>
+      <form id="expense-form">
+        <div class="form-group">
+          <label for="expense-description">Description</label>
+          <input type="text" id="expense-description" name="expense-description" placeholder="e.g. Coffee" required />
+        </div>
+
+        <div class="form-group">
+          <label for="expense-amount">Amount ($)</label>
+          <input type="number" id="expense-amount" name="expense-amount" min="0.01" step="0.01" placeholder="e.g. 4.50" required />
+        </div>
+
+        <div class="form-group">
+          <label for="expense-category">Category</label>
+          <select id="expense-category" name="expense-category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="food">Food</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="transportation">Transportation</option>
+            <option value="school">School</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <p class="error-message" id="expense-error" role="alert" hidden>
+          Please enter a description and an amount greater than $0.
+        </p>
+
+        <button type="submit" class="btn-primary">Add Expense</button>
+      </form>
+    </section>
+
+    <section class="category-filter" aria-label="Filter expenses by category">
+      <h2>Filter by Category</h2>
+      <div class="filter-buttons" id="filter-buttons">
+        <button type="button" class="filter-btn active" data-category="all">All</button>
+        <button type="button" class="filter-btn" data-category="food">Food</button>
+        <button type="button" class="filter-btn" data-category="entertainment">Entertainment</button>
+        <button type="button" class="filter-btn" data-category="transportation">Transportation</button>
+        <button type="button" class="filter-btn" data-category="school">School</button>
+        <button type="button" class="filter-btn" data-category="other">Other</button>
+      </div>
+    </section>
+
+    <section class="expense-ledger" aria-label="Expense list">
+      <h2>Your Expenses</h2>
+      <ul id="expense-list">
+        <li class="empty-state" id="empty-state">No expenses yet — add one above to get started.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Daniel Jackson</p>
+    <p>Last updated: <span id="last-updated"></span></p>
+  </footer>
+
+</body>
+</html>
