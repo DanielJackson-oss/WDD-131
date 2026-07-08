@@ -9,12 +9,10 @@
 </head>
 <body>
 
-    
     <div id="intro-screen">
         <div id="fact-card">
             <div id="fact-label">✨ Fun Fact</div>
             <p id="fact-text"></p>
-
             <div id="question" class="hidden">
                 <p>Want to see the Ponders and Proves now?</p>
                 <div id="answer-buttons">
@@ -22,16 +20,14 @@
                     <button onclick="answerNo()" class="no-btn"> No</button>
                 </div>
             </div>
-            
+
             <button id="next-btn" class="hidden" onclick="showNextFact()">Another fact! 🎲</button>
         </div>
     </div>
 
-    
     <div id="main-portal" class="hidden">
         <img src="ponder/images/cse_logo.svg" alt="CSE Logo" class="logo">
         <h1>WDD131 Portal Page</h1>
-
         <div id="folder-view">
             <div class="folder" onclick="openFolder('ponder')">
                 <span class="folder-icon">📁</span>
@@ -41,8 +37,11 @@
                 <span class="folder-icon">📁</span>
                 <span>Proves</span>
             </div>
+            <div class="folder" onclick="openFolder('final-project')">
+                <span class="folder-icon">📁</span>
+                <span>Final Project</span>
+            </div>
         </div>
-
         <div id="ponder" class="contents hidden">
             <h2>Ponders</h2>
             <a href="ponder/meta-css.html">Week 1 Ponder - Meta Tags</a>
@@ -59,7 +58,6 @@
             <a href="ponder/sortfilter.html">Week 10 Ponder - Sort and Filter</a>
             <a href="ponder/hikes.html">Week 10 Ponder pt. 2 - Hikes</a>
         </div>
-
         <div id="prove" class="contents hidden">
             <h2>Proves</h2>
             <a href="prove/mission/index.html">Week 1 and 2 - Mission Statement</a>
@@ -69,12 +67,12 @@
             <a href="prove/charactercard.html">Week 8 - Character Card</a>
             <a href="prove/recipes/recipe.html">Week 9 and 10 - Recipe Book</a>
         </div>
-
-        <div id-="Final Project" class="contents hidden">
+        <div id="final-project" class="contents hidden">
             <h2>Final Project</h2>
             <a href="Personal Project Plan/project.html">Project Plan</a>
             <a href="Personal Project Plan/index.html">Budget Jar</a>
+        </div>
     </div>
 
 </body>
-</html> 
+</html>
