@@ -1,20 +1,3 @@
-:root {
-  --primary: #1E3A5F;
-  --secondary: #2E8B57;
-  --accent-gold: #F4B400;
-  --accent-light: #F8F9FA;
-
-  --danger: #C0392B;
-  --warning: #F4B400;
-  --success: #2E8B57;
-
-  --font-heading: "IM Fell French Canon SC", serif;
-  --font-body: "Lato", sans-serif;
-
-  --radius: 10px;
-  --shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,9 +9,9 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
-  background-color: var(--accent-light);
-  color: var(--primary);
+  font-family: "Lato", sans-serif;
+  background-color: #F8F9FA;
+  color: #1E3A5F;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -36,32 +19,32 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-heading);
-  color: var(--primary);
+  font-family: "IM Fell French Canon SC", serif;
+  color: #1E3A5F;
   letter-spacing: 0.03em;
 }
 
 h2 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
-  border-bottom: 2px solid var(--accent-gold);
+  border-bottom: 2px solid #F4B400;
   padding-bottom: 0.35rem;
   display: inline-block;
 }
 
 button {
-  font-family: var(--font-body);
+  font-family: "Lato", sans-serif;
   cursor: pointer;
   border: none;
 }
 
 input, select {
-  font-family: var(--font-body);
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
 }
 
 a {
-  color: var(--secondary);
+  color: #1F7A4D;
 }
 
 main {
@@ -77,14 +60,14 @@ main {
 
 section {
   background-color: #fff;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
   padding: 1.25rem;
 }
 
 .site-header {
-  background-color: var(--primary);
-  color: var(--accent-light);
+  background-color: #1E3A5F;
+  color: #F8F9FA;
   padding: 1rem 1.25rem;
 }
 
@@ -103,15 +86,23 @@ section {
 }
 
 .logo-text h1 {
-  color: var(--accent-light);
+  color: #F8F9FA;
   font-size: 1.75rem;
   line-height: 1;
 }
 
 .tagline {
   font-size: 0.85rem;
-  color: var(--accent-gold);
+  color: #F4B400;
   margin-top: 0.15rem;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 65ch;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .budget-panel {
@@ -130,19 +121,19 @@ section {
 .budget-setup input {
   width: 100%;
   padding: 0.6rem 0.75rem;
-  border: 2px solid var(--primary);
-  border-radius: var(--radius);
+  border: 2px solid #1E3A5F;
+  border-radius: 10px;
 }
 
 .budget-setup input:focus,
 .add-expense input:focus,
 .add-expense select:focus {
-  outline: 3px solid var(--accent-gold);
+  outline: 3px solid #F4B400;
   outline-offset: 1px;
 }
 
 .error-message {
-  color: var(--danger);
+  color: #C0392B;
   font-size: 0.85rem;
   margin-top: 0.5rem;
   font-weight: 700;
@@ -161,8 +152,8 @@ section {
 .progress-bar-track {
   width: 100%;
   height: 22px;
-  background-color: var(--accent-light);
-  border: 2px solid var(--primary);
+  background-color: #F8F9FA;
+  border: 2px solid #1E3A5F;
   border-radius: 999px;
   overflow: hidden;
 }
@@ -170,16 +161,16 @@ section {
 .progress-bar-fill {
   height: 100%;
   width: 0%;
-  background-color: var(--success);
+  background-color: #2E8B57;
   transition: width 0.4s ease, background-color 0.4s ease;
 }
 
 .progress-bar-fill.status-warning {
-  background-color: var(--warning);
+  background-color: #F4B400;
 }
 
 .progress-bar-fill.status-danger {
-  background-color: var(--danger);
+  background-color: #C0392B;
 }
 
 .status-message {
@@ -206,14 +197,14 @@ section {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--secondary);
+  color: #1F7A4D;
   font-weight: 700;
 }
 
 .stat-value {
   font-size: 1.4rem;
-  font-family: var(--font-heading);
-  color: var(--primary);
+  font-family: "IM Fell French Canon SC", serif;
+  color: #1E3A5F;
 }
 
 .form-group {
@@ -231,23 +222,23 @@ section {
 .form-group select {
   width: 100%;
   padding: 0.6rem 0.75rem;
-  border: 2px solid var(--primary);
-  border-radius: var(--radius);
+  border: 2px solid #1E3A5F;
+  border-radius: 10px;
   background-color: #fff;
 }
 
 .btn-primary {
-  background-color: var(--secondary);
-  color: var(--accent-light);
+  background-color: #1F7A4D;
+  color: #F8F9FA;
   font-weight: 700;
   padding: 0.7rem 1.5rem;
-  border-radius: var(--radius);
+  border-radius: 10px;
   font-size: 1rem;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-primary:hover {
-  background-color: #256e46;
+  background-color: #17603C;
 }
 
 .btn-primary:active {
@@ -261,9 +252,9 @@ section {
 }
 
 .filter-btn {
-  background-color: var(--accent-light);
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  background-color: #F8F9FA;
+  color: #1E3A5F;
+  border: 2px solid #1E3A5F;
   border-radius: 999px;
   padding: 0.4rem 1rem;
   font-size: 0.85rem;
@@ -272,14 +263,14 @@ section {
 }
 
 .filter-btn:hover {
-  background-color: var(--primary);
-  color: var(--accent-light);
+  background-color: #1E3A5F;
+  color: #F8F9FA;
 }
 
 .filter-btn.active {
-  background-color: var(--accent-gold);
-  border-color: var(--accent-gold);
-  color: var(--primary);
+  background-color: #F4B400;
+  border-color: #F4B400;
+  color: #1E3A5F;
 }
 
 #expense-list {
@@ -298,8 +289,8 @@ section {
   gap: 0.75rem;
   padding: 0.7rem 0.9rem;
   border: 1px solid #ddd;
-  border-radius: var(--radius);
-  background-color: var(--accent-light);
+  border-radius: 10px;
+  background-color: #F8F9FA;
 }
 
 .expense-info {
@@ -314,19 +305,19 @@ section {
 .expense-category {
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: var(--secondary);
+  color: #1F7A4D;
   letter-spacing: 0.03em;
 }
 
 .expense-amount {
-  font-family: var(--font-heading);
+  font-family: "IM Fell French Canon SC", serif;
   font-size: 1.1rem;
   white-space: nowrap;
 }
 
 .delete-btn {
   background-color: transparent;
-  color: var(--danger);
+  color: #C0392B;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1;
@@ -347,8 +338,8 @@ section {
 }
 
 .site-footer {
-  background-color: var(--primary);
-  color: var(--accent-light);
+  background-color: #1E3A5F;
+  color: #F8F9FA;
   text-align: center;
   padding: 1rem;
   font-size: 0.85rem;
@@ -394,5 +385,4 @@ section {
     transition: none;
   }
 }
-
 /* Enjoy
