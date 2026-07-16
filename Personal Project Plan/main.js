@@ -13,7 +13,7 @@ const amountInput = document.getElementById('expense-amount');
 const categoryInput = document.getElementById('expense-category');
 const expenseError = document.getElementById('expense-error');
 
-  const expenseList = document.getElementById('expense-list');
+const expenseList = document.getElementById('expense-list');
 
 const totalSpentDisplay = document.getElementById('total-spent-display');
 const remainingDisplay = document.getElementById('remaining-display');

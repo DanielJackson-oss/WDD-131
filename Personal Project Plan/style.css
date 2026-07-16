@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #F8F9FA;
   color: #1E3A5F;
   line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "IM Fell French Canon SC", serif;
+  font-family: Georgia, "Times New Roman", serif;
   color: #1E3A5F;
   letter-spacing: 0.03em;
 }
@@ -33,13 +33,13 @@ h2 {
 }
 
 button {
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   cursor: pointer;
   border: none;
 }
 
 input, select {
-  font-family: "Lato", sans-serif;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -203,7 +203,7 @@ section {
 
 .stat-value {
   font-size: 1.4rem;
-  font-family: "IM Fell French Canon SC", serif;
+  font-family: Georgia, "Times New Roman", serif;
   color: #1E3A5F;
 }
 
@@ -310,7 +310,7 @@ section {
 }
 
 .expense-amount {
-  font-family: "IM Fell French Canon SC", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.1rem;
   white-space: nowrap;
 }
@@ -377,12 +377,3 @@ section {
     font-size: 2rem;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar-fill,
-  .btn-primary,
-  .filter-btn {
-    transition: none;
-  }
-}
-/* Enjoy
